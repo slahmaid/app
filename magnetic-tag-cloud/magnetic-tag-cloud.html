@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ebebe9">
+  <title>Magnetic Tag Cloud Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="magnetic-tag-cloud.css">
+</head>
+<body class="mtc_preview">
+<section class="mtc_wrap" data-anm-magnetic-tag-cloud data-anm-gap="0" data-anm-max-rows="4" data-anm-hover-radius="90" data-anm-hover-strength="1" data-anm-spin="1" data-anm-repel-radius="110" data-anm-repel-strength="60" data-anm-stiffness="180" data-anm-damping="0.38" data-anm-throw-strength="1">
+  <div class="mtc_cloud" data-anm-mtc-cloud>
+    <ul class="mtc_list" role="list">
+      <li><a class="mtc_tag mtc_tag--ink" data-anm-mtc-tag href="#">Running</a></li>
+      <li><a class="mtc_tag mtc_tag--signal" data-anm-mtc-tag href="#">Tennis</a></li>
+      <li><a class="mtc_tag mtc_tag--white" data-anm-mtc-tag href="#">Trail</a></li>
+      <li><a class="mtc_tag mtc_tag--cobalt" data-anm-mtc-tag href="#">Football</a></li>
+      <li><a class="mtc_tag mtc_tag--stone" data-anm-mtc-tag href="#">Recovery</a></li>
+      <li><a class="mtc_tag mtc_tag--white" data-anm-mtc-tag href="#">Basketball</a></li>
+      <li><a class="mtc_tag mtc_tag--ink" data-anm-mtc-tag href="#">Ski</a></li>
+      <li><a class="mtc_tag mtc_tag--stone" data-anm-mtc-tag href="#">Track</a></li>
+      <li><a class="mtc_tag mtc_tag--signal" data-anm-mtc-tag href="#">Cycling</a></li>
+      <li><a class="mtc_tag mtc_tag--cobalt" data-anm-mtc-tag href="#">Endurance</a></li>
+    </ul>
+  </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/Draggable.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/CustomEase.min.js"></script>
+<script src="magnetic-tag-cloud.js"></script>
+</body>
+</html>

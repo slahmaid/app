@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f0f0ed">
+  <title>Text Reveal Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="text-reveal.css">
+</head>
+<body class="text_reveal_preview">
+<!-- Text Reveal - Scroll Animation -->
+<!-- Line-by-line text reveal with masking effect on scroll -->
+
+<div class="text_reveal_wrap">
+  <h2
+    class="text_reveal_text"
+    data-anm-scroll-text-reveal
+    data-anm-start="top 50%"
+    data-anm-stagger="0.1"
+  >
+    Every stride is a statement. Every finish line a new beginning. We build
+    gear for athletes who refuse to settle for <strong>yesterday's pace</strong>.
+    Push beyond limits. Outrun expectations. This is where
+    <strong>champions are made</strong>.
+  </h2>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+<script>
+  document.fonts.ready.then(function () {
+    var script = document.createElement('script');
+    script.src = 'text-reveal.js';
+    document.body.appendChild(script);
+  });
+</script>
+</body>
+</html>

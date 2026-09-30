@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ebebe9">
+  <title>Elastic Divider Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="elastic-divider.css">
+</head>
+<body class="eldv_preview">
+<section class="eldv_stage">
+  <div class="eldv_container">
+    <div class="eldv_block">
+      <span class="eldv_label">01 Approach</span>
+      <p class="eldv_text">Every frame is strung by hand.</p>
+    </div>
+    <div
+      class="eldv_divider"
+      data-anm-elastic-divider
+      data-anm-color="#101010"
+      data-anm-weight="1"
+      data-anm-frequency="2.6"
+      data-anm-damping="0.72"
+      data-anm-sensitivity="1"
+      data-anm-max-amplitude="38"
+    >
+      <svg class="eldv_svg" data-anm-elastic-divider-svg aria-hidden="true" focusable="false">
+        <path class="eldv_path" data-anm-elastic-divider-path fill="none" stroke-linecap="round"></path>
+      </svg>
+    </div>
+  </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="elastic-divider.js"></script>
+</body>
+</html>
