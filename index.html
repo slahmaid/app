@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="multi-level-drawer-menu/multi-level-drawer-menu.css" />
     <link rel="stylesheet" href="curtain-slider/curtain-slider.css" />
-    <link rel="stylesheet" href="ascii-overlay/ascii-overlay.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -75,7 +74,7 @@
                 </div>
                 <details class="cutout_card_details">
                   <summary>Read More <span aria-hidden="true">+</span></summary>
-                  <p>A campaign about finding a steadier pace in the places that ask us to keep moving.</p>
+                  <div class="cutout_card_details_clip"><p>A campaign about finding a steadier pace in the places that ask us to keep moving.</p></div>
                 </details>
               </div>
             </article>
@@ -94,7 +93,7 @@
                 </div>
                 <details class="cutout_card_details">
                   <summary>Read More <span aria-hidden="true">+</span></summary>
-                  <p>Art direction and campaign assets built around the changing energy of the city.</p>
+                  <div class="cutout_card_details_clip"><p>Art direction and campaign assets built around the changing energy of the city.</p></div>
                 </details>
               </div>
             </article>
@@ -113,7 +112,7 @@
                 </div>
                 <details class="cutout_card_details">
                   <summary>Read More <span aria-hidden="true">+</span></summary>
-                  <p>Human, unguarded frames shaped by natural light and the pause before action.</p>
+                  <div class="cutout_card_details_clip"><p>Human, unguarded frames shaped by natural light and the pause before action.</p></div>
                 </details>
               </div>
             </article>
@@ -132,30 +131,10 @@
                 </div>
                 <details class="cutout_card_details">
                   <summary>Read More <span aria-hidden="true">+</span></summary>
-                  <p>A flexible digital story system for notes, places, and people encountered along the way.</p>
+                  <div class="cutout_card_details_clip"><p>A flexible digital story system for notes, places, and people encountered along the way.</p></div>
                 </details>
               </div>
             </article>
-          </div>
-        </div>
-        <div class="work_ascii" role="img" aria-label="Animated ASCII rendering of a cyclist">
-          <div class="asov_stage work_ascii_stage">
-            <div
-              class="asov_container"
-              data-anm-ascii-overlay
-              data-anm-image="https://annnimate.b-cdn.net/preview-assets/vanta/hero_cycling_02.jpg?width=1920"
-              data-anm-cell-size="8"
-              data-anm-glyphs="1,x,0,X,*,#,@"
-              data-anm-thresh-low="0.32"
-              data-anm-thresh-high="0.7"
-              data-anm-whitening="0.7"
-              data-anm-opacity="0.9"
-              data-anm-jitter="0.35"
-              data-anm-reshuffle-rate="0.6"
-              data-anm-detail-thresh="0.1"
-              data-anm-detail-strength="1"
-              data-anm-char-gap="0.3"
-            ></div>
           </div>
         </div>
       </section>
@@ -268,11 +247,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/CustomEase.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
     <script src="curtain-slider/curtain-slider.js"></script>
     <script src="multi-level-drawer-menu/multi-level-drawer-menu.js"></script>
-    <script src="ascii-overlay/ascii-overlay.js"></script>
     <script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script>
     <script>
       (function () {
@@ -286,7 +262,6 @@
           anchors: reducedMotion ? false : { offset: -80 },
         });
 
-        lenis.on('scroll', function () { ScrollTrigger.update(); });
         gsap.ticker.add(function (time) { lenis.raf(time * 1000); });
         gsap.ticker.lagSmoothing(0);
 

@@ -280,20 +280,6 @@ body {
   gap: 1rem;
 }
 
-.work_ascii {
-  position: relative;
-  z-index: 1;
-  width: calc(100% + 10vw);
-  margin: clamp(3rem, 6vw, 5rem) -5vw -6rem;
-  overflow: hidden;
-  background: #080b09;
-}
-
-.work_ascii_stage {
-  height: clamp(360px, 58vw, 760px);
-  min-height: 360px;
-}
-
 .cutout_card {
   --cutout-surface: #181a18;
   display: flex;
@@ -483,6 +469,17 @@ body {
 .cutout_card_details {
   margin-top: 0.25rem;
   border-top: 1px solid rgb(244 243 236 / 8%);
+  interpolate-size: allow-keywords;
+}
+
+.cutout_card_details::details-content {
+  block-size: 0;
+  overflow-y: clip;
+  transition: block-size 320ms cubic-bezier(0.2, 0.8, 0.2, 1), content-visibility 320ms allow-discrete;
+}
+
+.cutout_card_details[open]::details-content {
+  block-size: auto;
 }
 
 .cutout_card_details summary {
@@ -506,15 +503,34 @@ body {
   transition: transform 180ms ease;
 }
 
-.cutout_card_details[open] summary span {
-  transform: rotate(45deg);
+.cutout_card_details_clip {
+  display: block;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity 220ms ease, transform 220ms ease;
 }
 
-.cutout_card_details > p {
+.cutout_card_details[open] .cutout_card_details_clip {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.cutout_card_details_clip p {
   margin: 0 0 0.25rem;
   color: #a6aaa3;
   font-size: 0.78rem;
   line-height: 1.55;
+}
+
+.cutout_card_details[open] summary span {
+  transform: rotate(45deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cutout_card_details_clip,
+  .cutout_card_details summary span {
+    transition: none;
+  }
 }
 
 @keyframes work-card-enter {
@@ -579,16 +595,6 @@ body {
   .work_grid {
     grid-template-columns: 1fr;
     gap: 1rem;
-  }
-
-  .work_ascii {
-    width: calc(100% + 2.5rem);
-    margin: 3rem -1.25rem -5rem;
-  }
-
-  .work_ascii_stage {
-    height: clamp(360px, 110vw, 520px);
-    min-height: 360px;
   }
 
   .cutout_card_media {
