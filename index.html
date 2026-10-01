@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="multi-level-drawer-menu/multi-level-drawer-menu.css" />
     <link rel="stylesheet" href="curtain-slider/curtain-slider.css" />
+    <link rel="stylesheet" href="ascii-overlay/ascii-overlay.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -20,7 +21,7 @@
       data-anm-duration="0.9"
       data-anm-ease="expo.out"
       data-anm-stagger="0.06"
-      data-anm-panel-bg="#f4f3ec"
+      data-anm-panel-bg="#171a16"
     >
       <div class="mldm_page" data-anm-mldm-page>
         <div
@@ -47,6 +48,117 @@
           <div class="cs_stage" data-anm-cs-stage></div>
         </div>
       </div>
+
+      <section class="work_section" id="work" aria-labelledby="work_heading">
+        <div class="work_section_inner">
+          <header class="work_section_header">
+            <p class="work_section_kicker">CHLAH. / SELECTED WORK</p>
+            <div class="work_section_intro">
+              <h2 id="work_heading">Stories in motion.</h2>
+              <p>Campaigns, images, and identities made to move people.</p>
+            </div>
+          </header>
+
+          <div class="work_grid">
+            <article class="cutout_card">
+              <div class="cutout_card_media">
+                <img src="https://annnimate.b-cdn.net/preview-assets/vanta/action_cyclist-climb_02.jpg?width=1200&amp;format=auto" alt="Cyclist climbing through a high alpine landscape" loading="lazy" />
+                <span class="cutout_card_pin">New</span>
+                <span class="cutout_card_inset">Featured</span>
+              </div>
+              <div class="cutout_card_content">
+                <h3>Alpine Adventures</h3>
+                <p>Discover breathtaking mountain landscapes and experience the serenity of nature at its finest.</p>
+                <div class="cutout_card_footer">
+                  <div class="cutout_card_author"><span class="cutout_card_avatar">SC</span><span>Sarah Chen</span></div>
+                  <span class="cutout_card_meta">5 min read</span>
+                </div>
+                <details class="cutout_card_details">
+                  <summary>Read More <span aria-hidden="true">+</span></summary>
+                  <p>A campaign about finding a steadier pace in the places that ask us to keep moving.</p>
+                </details>
+              </div>
+            </article>
+
+            <article class="cutout_card">
+              <div class="cutout_card_media">
+                <img src="https://annnimate.b-cdn.net/preview-assets/vanta/hero_run_02.jpg?width=1200&amp;format=auto" alt="Runner moving through a sharp beam of light" loading="lazy" />
+                <span class="cutout_card_inset">Campaign</span>
+              </div>
+              <div class="cutout_card_content">
+                <h3>City in Motion</h3>
+                <p>A visual identity for the people who turn familiar streets into their own routes.</p>
+                <div class="cutout_card_footer">
+                  <div class="cutout_card_author"><span class="cutout_card_avatar">CH</span><span>chlah. studio</span></div>
+                  <span class="cutout_card_meta">Identity / 2025</span>
+                </div>
+                <details class="cutout_card_details">
+                  <summary>Read More <span aria-hidden="true">+</span></summary>
+                  <p>Art direction and campaign assets built around the changing energy of the city.</p>
+                </details>
+              </div>
+            </article>
+
+            <article class="cutout_card">
+              <div class="cutout_card_media">
+                <img src="https://annnimate.b-cdn.net/preview-assets/vanta/hero_profile_02.jpg?width=1200&amp;format=auto" alt="Athlete in profile against a vivid field of color" loading="lazy" />
+                <span class="cutout_card_inset">Portraits</span>
+              </div>
+              <div class="cutout_card_content">
+                <h3>Quiet Focus</h3>
+                <p>A portrait series tracing the small rituals behind confidence, craft, and performance.</p>
+                <div class="cutout_card_footer">
+                  <div class="cutout_card_author"><span class="cutout_card_avatar">CH</span><span>chlah. studio</span></div>
+                  <span class="cutout_card_meta">Editorial / 2025</span>
+                </div>
+                <details class="cutout_card_details">
+                  <summary>Read More <span aria-hidden="true">+</span></summary>
+                  <p>Human, unguarded frames shaped by natural light and the pause before action.</p>
+                </details>
+              </div>
+            </article>
+
+            <article class="cutout_card">
+              <div class="cutout_card_media">
+                <img src="https://annnimate.b-cdn.net/preview-assets/images/sports/street-running-earbuds-3.avif" alt="Runner finding a quiet moment in the city" loading="lazy" />
+                <span class="cutout_card_inset">Digital</span>
+              </div>
+              <div class="cutout_card_content">
+                <h3>The Long Way Home</h3>
+                <p>An editorial study of everyday movement and the details that make a route feel personal.</p>
+                <div class="cutout_card_footer">
+                  <div class="cutout_card_author"><span class="cutout_card_avatar">CH</span><span>chlah. studio</span></div>
+                  <span class="cutout_card_meta">Journal / 2025</span>
+                </div>
+                <details class="cutout_card_details">
+                  <summary>Read More <span aria-hidden="true">+</span></summary>
+                  <p>A flexible digital story system for notes, places, and people encountered along the way.</p>
+                </details>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="work_ascii" role="img" aria-label="Animated ASCII rendering of a cyclist">
+          <div class="asov_stage work_ascii_stage">
+            <div
+              class="asov_container"
+              data-anm-ascii-overlay
+              data-anm-image="https://annnimate.b-cdn.net/preview-assets/vanta/hero_cycling_02.jpg?width=1920"
+              data-anm-cell-size="8"
+              data-anm-glyphs="1,x,0,X,*,#,@"
+              data-anm-thresh-low="0.32"
+              data-anm-thresh-high="0.7"
+              data-anm-whitening="0.7"
+              data-anm-opacity="0.9"
+              data-anm-jitter="0.35"
+              data-anm-reshuffle-rate="0.6"
+              data-anm-detail-thresh="0.1"
+              data-anm-detail-strength="1"
+              data-anm-char-gap="0.3"
+            ></div>
+          </div>
+        </div>
+      </section>
 
       <header class="nimo_header" aria-label="Site header">
         <a class="mldm_logo" data-anm-mldm-logo href="#top" aria-label="chlah home">chlah.</a>
@@ -84,74 +196,71 @@
 
         <aside class="mldm_panel mldm_panel_primary" data-anm-mldm-panel data-anm-mldm-panel-level="1">
           <div class="mldm_panel_inner">
-            <nav class="mldm_primary_nav" aria-label="Shop categories">
+            <nav class="mldm_primary_nav" aria-label="Portfolio">
               <ul class="mldm_list">
-                <li class="mldm_item"><button class="mldm_primary" data-anm-mldm-primary data-anm-mldm-target="activewear" aria-expanded="false"><span class="mldm_primary_dot" aria-hidden="true"></span><span class="mldm_primary_label">Activewear</span></button></li>
-                <li class="mldm_item"><button class="mldm_primary" data-anm-mldm-primary data-anm-mldm-target="everyday" aria-expanded="false"><span class="mldm_primary_dot" aria-hidden="true"></span><span class="mldm_primary_label">Everyday</span></button></li>
-                <li class="mldm_item"><button class="mldm_primary" data-anm-mldm-primary data-anm-mldm-target="footwear" aria-expanded="false"><span class="mldm_primary_dot" aria-hidden="true"></span><span class="mldm_primary_label">Footwear</span></button></li>
-                <li class="mldm_item"><button class="mldm_primary" data-anm-mldm-primary data-anm-mldm-target="accessories" aria-expanded="false"><span class="mldm_primary_dot" aria-hidden="true"></span><span class="mldm_primary_label">Accessories</span></button></li>
+                <li class="mldm_item"><button class="mldm_primary" data-anm-mldm-primary data-anm-mldm-target="home" aria-expanded="false"><span class="mldm_primary_dot" aria-hidden="true"></span><span class="mldm_primary_label">Home</span></button></li>
+                <li class="mldm_item"><button class="mldm_primary" data-anm-mldm-primary data-anm-mldm-target="work" aria-expanded="false"><span class="mldm_primary_dot" aria-hidden="true"></span><span class="mldm_primary_label">Work</span></button></li>
+                <li class="mldm_item"><button class="mldm_primary" data-anm-mldm-primary data-anm-mldm-target="about" aria-expanded="false"><span class="mldm_primary_dot" aria-hidden="true"></span><span class="mldm_primary_label">About</span></button></li>
+                <li class="mldm_item"><button class="mldm_primary" data-anm-mldm-primary data-anm-mldm-target="contact" aria-expanded="false"><span class="mldm_primary_dot" aria-hidden="true"></span><span class="mldm_primary_label">Contact</span></button></li>
               </ul>
-              <a class="mldm_explore" data-anm-mldm-secondary href="#collection">Explore all</a>
+              <a class="mldm_explore" data-anm-mldm-secondary href="#work">View selected work</a>
             </nav>
 
             <div class="mldm_cards">
-              <a class="mldm_card" data-anm-mldm-secondary href="#journal">
-                <span class="mldm_card_media"><img class="mldm_card_img" src="https://annnimate.b-cdn.net/preview-assets/images/sports/running-hero-female-1.avif" alt="Runner wearing chlah-inspired activewear" /></span>
-                <span class="mldm_card_label">Field notes</span>
+              <a class="mldm_card" data-anm-mldm-secondary href="#work">
+                <span class="mldm_card_media"><img class="mldm_card_img" src="https://annnimate.b-cdn.net/preview-assets/images/sports/running-hero-female-1.avif" alt="Runner photographed for a campaign" /></span>
+                <span class="mldm_card_label">Campaign 01</span>
               </a>
-              <a class="mldm_card" data-anm-mldm-secondary href="#community">
-                <span class="mldm_card_media"><img class="mldm_card_img" src="https://annnimate.b-cdn.net/preview-assets/images/sports/street-running-earbuds-3.avif" alt="City running essentials" /></span>
-                <span class="mldm_card_label">Community</span>
+              <a class="mldm_card" data-anm-mldm-secondary href="#work">
+                <span class="mldm_card_media"><img class="mldm_card_img" src="https://annnimate.b-cdn.net/preview-assets/images/sports/street-running-earbuds-3.avif" alt="Urban running campaign detail" /></span>
+                <span class="mldm_card_label">City / Studies</span>
               </a>
             </div>
 
-            <nav class="mldm_footer_nav" aria-label="More links">
+            <nav class="mldm_footer_nav" aria-label="Contact links">
+              <a class="mldm_footer_link" data-anm-mldm-secondary href="#contact">Get in touch</a>
               <a class="mldm_footer_link" data-anm-mldm-secondary href="#about">About chlah</a>
-              <a class="mldm_footer_link" data-anm-mldm-secondary href="#journal">Journal</a>
             </nav>
           </div>
         </aside>
 
-        <aside class="mldm_panel mldm_panel_secondary" data-anm-mldm-panel data-anm-mldm-panel-level="2" aria-label="Category links">
-          <button class="mldm_back" data-anm-mldm-back aria-label="Back to shop categories">
+        <aside class="mldm_panel mldm_panel_secondary" data-anm-mldm-panel data-anm-mldm-panel-level="2" aria-label="Portfolio links">
+          <button class="mldm_back" data-anm-mldm-back aria-label="Back to portfolio navigation">
             <span class="mldm_back_icon" aria-hidden="true"></span><span class="mldm_back_label">Back</span>
           </button>
           <div class="mldm_panel_inner">
             <div class="mldm_sublist_stack" data-anm-mldm-sublist-stack>
-              <div class="mldm_sublist mldm_sublist_active" data-anm-mldm-sublist data-anm-mldm-sublist-for="activewear" aria-hidden="false">
+              <div class="mldm_sublist mldm_sublist_active" data-anm-mldm-sublist data-anm-mldm-sublist-for="home" aria-hidden="false">
                 <ul class="mldm_list">
-                  <li class="mldm_item"><button class="mldm_sublink" data-anm-mldm-secondary-link><span class="mldm_sublink_dot" aria-hidden="true"></span><span class="mldm_sublink_label">Tops</span></button></li>
-                  <li class="mldm_item"><button class="mldm_sublink" data-anm-mldm-secondary-link><span class="mldm_sublink_dot" aria-hidden="true"></span><span class="mldm_sublink_label">Leggings</span></button></li>
-                  <li class="mldm_item"><button class="mldm_sublink" data-anm-mldm-secondary-link><span class="mldm_sublink_dot" aria-hidden="true"></span><span class="mldm_sublink_label">Shorts</span></button></li>
-                  <li class="mldm_item"><button class="mldm_sublink" data-anm-mldm-secondary-link><span class="mldm_sublink_dot" aria-hidden="true"></span><span class="mldm_sublink_label">Layers</span></button></li>
+                  <li class="mldm_item"><button class="mldm_sublink" data-anm-mldm-secondary-link><span class="mldm_sublink_dot" aria-hidden="true"></span><span class="mldm_sublink_label">Introduction</span></button></li>
+                  <li class="mldm_item"><button class="mldm_sublink" data-anm-mldm-secondary-link><span class="mldm_sublink_dot" aria-hidden="true"></span><span class="mldm_sublink_label">Selected work</span></button></li>
+                  <li class="mldm_item"><button class="mldm_sublink" data-anm-mldm-secondary-link><span class="mldm_sublink_dot" aria-hidden="true"></span><span class="mldm_sublink_label">Latest update</span></button></li>
                 </ul>
               </div>
-              <div class="mldm_sublist" data-anm-mldm-sublist data-anm-mldm-sublist-for="everyday" aria-hidden="true">
+              <div class="mldm_sublist" data-anm-mldm-sublist data-anm-mldm-sublist-for="work" aria-hidden="true">
                 <ul class="mldm_list">
-                  <li class="mldm_item"><button class="mldm_sublink" data-anm-mldm-secondary-link><span class="mldm_sublink_dot" aria-hidden="true"></span><span class="mldm_sublink_label">Tees</span></button></li>
-                  <li class="mldm_item"><button class="mldm_sublink" data-anm-mldm-secondary-link><span class="mldm_sublink_dot" aria-hidden="true"></span><span class="mldm_sublink_label">Sweats</span></button></li>
-                  <li class="mldm_item"><button class="mldm_sublink" data-anm-mldm-secondary-link><span class="mldm_sublink_dot" aria-hidden="true"></span><span class="mldm_sublink_label">Trousers</span></button></li>
-                  <li class="mldm_item"><button class="mldm_sublink" data-anm-mldm-secondary-link><span class="mldm_sublink_dot" aria-hidden="true"></span><span class="mldm_sublink_label">Outerwear</span></button></li>
+                  <li class="mldm_item"><button class="mldm_sublink" data-anm-mldm-secondary-link><span class="mldm_sublink_dot" aria-hidden="true"></span><span class="mldm_sublink_label">Campaigns</span></button></li>
+                  <li class="mldm_item"><button class="mldm_sublink" data-anm-mldm-secondary-link><span class="mldm_sublink_dot" aria-hidden="true"></span><span class="mldm_sublink_label">Art direction</span></button></li>
+                  <li class="mldm_item"><button class="mldm_sublink" data-anm-mldm-secondary-link><span class="mldm_sublink_dot" aria-hidden="true"></span><span class="mldm_sublink_label">Digital</span></button></li>
+                  <li class="mldm_item"><button class="mldm_sublink" data-anm-mldm-secondary-link><span class="mldm_sublink_dot" aria-hidden="true"></span><span class="mldm_sublink_label">Photography</span></button></li>
                 </ul>
               </div>
-              <div class="mldm_sublist" data-anm-mldm-sublist data-anm-mldm-sublist-for="footwear" aria-hidden="true">
+              <div class="mldm_sublist" data-anm-mldm-sublist data-anm-mldm-sublist-for="about" aria-hidden="true">
                 <ul class="mldm_list">
-                  <li class="mldm_item"><button class="mldm_sublink" data-anm-mldm-secondary-link><span class="mldm_sublink_dot" aria-hidden="true"></span><span class="mldm_sublink_label">Running</span></button></li>
-                  <li class="mldm_item"><button class="mldm_sublink" data-anm-mldm-secondary-link><span class="mldm_sublink_dot" aria-hidden="true"></span><span class="mldm_sublink_label">Training</span></button></li>
-                  <li class="mldm_item"><button class="mldm_sublink" data-anm-mldm-secondary-link><span class="mldm_sublink_dot" aria-hidden="true"></span><span class="mldm_sublink_label">Everyday</span></button></li>
-                  <li class="mldm_item"><button class="mldm_sublink" data-anm-mldm-secondary-link><span class="mldm_sublink_dot" aria-hidden="true"></span><span class="mldm_sublink_label">All footwear</span></button></li>
+                  <li class="mldm_item"><button class="mldm_sublink" data-anm-mldm-secondary-link><span class="mldm_sublink_dot" aria-hidden="true"></span><span class="mldm_sublink_label">The studio</span></button></li>
+                  <li class="mldm_item"><button class="mldm_sublink" data-anm-mldm-secondary-link><span class="mldm_sublink_dot" aria-hidden="true"></span><span class="mldm_sublink_label">Our approach</span></button></li>
+                  <li class="mldm_item"><button class="mldm_sublink" data-anm-mldm-secondary-link><span class="mldm_sublink_dot" aria-hidden="true"></span><span class="mldm_sublink_label">Collaborators</span></button></li>
                 </ul>
               </div>
-              <div class="mldm_sublist" data-anm-mldm-sublist data-anm-mldm-sublist-for="accessories" aria-hidden="true">
+              <div class="mldm_sublist" data-anm-mldm-sublist data-anm-mldm-sublist-for="contact" aria-hidden="true">
                 <ul class="mldm_list">
-                  <li class="mldm_item"><button class="mldm_sublink" data-anm-mldm-secondary-link><span class="mldm_sublink_dot" aria-hidden="true"></span><span class="mldm_sublink_label">Bags</span></button></li>
-                  <li class="mldm_item"><button class="mldm_sublink" data-anm-mldm-secondary-link><span class="mldm_sublink_dot" aria-hidden="true"></span><span class="mldm_sublink_label">Socks</span></button></li>
-                  <li class="mldm_item"><button class="mldm_sublink" data-anm-mldm-secondary-link><span class="mldm_sublink_dot" aria-hidden="true"></span><span class="mldm_sublink_label">Caps</span></button></li>
-                  <li class="mldm_item"><button class="mldm_sublink" data-anm-mldm-secondary-link><span class="mldm_sublink_dot" aria-hidden="true"></span><span class="mldm_sublink_label">Equipment</span></button></li>
+                  <li class="mldm_item"><button class="mldm_sublink" data-anm-mldm-secondary-link><span class="mldm_sublink_dot" aria-hidden="true"></span><span class="mldm_sublink_label">Get in touch</span></button></li>
+                  <li class="mldm_item"><button class="mldm_sublink" data-anm-mldm-secondary-link><span class="mldm_sublink_dot" aria-hidden="true"></span><span class="mldm_sublink_label">Instagram</span></button></li>
+                  <li class="mldm_item"><button class="mldm_sublink" data-anm-mldm-secondary-link><span class="mldm_sublink_dot" aria-hidden="true"></span><span class="mldm_sublink_label">LinkedIn</span></button></li>
                 </ul>
               </div>
             </div>
-            <a class="mldm_sub_explore" data-anm-mldm-secondary href="#collection">Explore this category</a>
+            <a class="mldm_sub_explore" data-anm-mldm-secondary href="#work">Explore this section</a>
           </div>
         </aside>
       </div>
@@ -159,7 +268,41 @@
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/CustomEase.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
     <script src="curtain-slider/curtain-slider.js"></script>
     <script src="multi-level-drawer-menu/multi-level-drawer-menu.js"></script>
+    <script src="ascii-overlay/ascii-overlay.js"></script>
+    <script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script>
+    <script>
+      (function () {
+        if (typeof Lenis === 'undefined') return;
+
+        var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        var lenis = new Lenis({
+          duration: 1.1,
+          easing: function (time) { return Math.min(1, 1.001 - Math.pow(2, -10 * time)); },
+          smoothWheel: !reducedMotion,
+          anchors: reducedMotion ? false : { offset: -80 },
+        });
+
+        lenis.on('scroll', function () { ScrollTrigger.update(); });
+        gsap.ticker.add(function (time) { lenis.raf(time * 1000); });
+        gsap.ticker.lagSmoothing(0);
+
+        var menu = document.querySelector('[data-anm-multi-level-drawer-menu]');
+        if (menu) {
+          menu.addEventListener('anm-mldm-open', function () { lenis.stop(); });
+          menu.addEventListener('anm-mldm-close', function () { lenis.start(); });
+        }
+
+        window.Anm = window.Anm || {};
+        window.Anm.SmoothScroll = {
+          scrollTo: function (target, options) { lenis.scrollTo(target, options); },
+          stop: function () { lenis.stop(); },
+          start: function () { lenis.start(); },
+        };
+      })();
+    </script>
   </body>
 </html>
