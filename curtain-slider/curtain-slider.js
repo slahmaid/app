@@ -55,7 +55,7 @@
       return {
         title: el.dataset.title || '',
         label: el.dataset.label || '',
-        src: img ? img.currentSrc || img.src : '',
+        src: img ? ((img.dataset.mobileSrc && window.matchMedia('(max-width: 767px)').matches) ? img.dataset.mobileSrc : (img.currentSrc || img.src)) : '',
         alt: img ? img.alt || '' : '',
       };
     });

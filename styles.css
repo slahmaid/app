@@ -40,7 +40,7 @@ html.lenis body {
 
 body {
   color: var(--nimo-ink);
-  font-family: "DM Sans", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .mldm_wrap {
@@ -48,9 +48,9 @@ body {
   height: auto;
   min-height: 100vh;
   overflow: visible;
-  background: #101010;
+  background: var(--nimo-paper);
   color: var(--nimo-ink);
-  font-family: "DM Sans", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .mldm_page {
@@ -59,13 +59,13 @@ body {
   z-index: auto;
   min-height: 100vh;
   overflow: visible;
-  background: #101010;
+  background: var(--nimo-paper);
 }
 
 .cs_wrap {
-  --cs-bg: #101010;
+  --cs-bg: var(--nimo-paper);
   --cs-margin: 5vw;
-  --cs-sans: "DM Sans", sans-serif;
+  --cs-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .cs_label {
@@ -88,7 +88,7 @@ body {
 }
 
 .cs_title {
-  font-family: "Instrument Serif", Georgia, serif;
+  font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 96px;
   font-weight: 400;
   letter-spacing: 0;
@@ -130,7 +130,7 @@ body {
   top: 2.15rem;
   right: 5vw;
   color: #fff !important;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   filter: drop-shadow(0 1px 3px rgb(0 0 0 / 50%));
 }
 
@@ -149,8 +149,8 @@ body {
 }
 
 .mldm_panel {
-  background-color: #171a16;
-  color: var(--nimo-paper);
+  background-color: var(--nimo-ink);
+  color: var(--nimo-ink);
 }
 
 .mldm_panel_inner {
@@ -160,16 +160,16 @@ body {
 .mldm_primary,
 .mldm_sublink,
 .mldm_back {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .mldm_primary {
-  color: #a1a99e;
+  color: #5b6b5f;
 }
 
 .mldm_primary:hover,
 .mldm_sublink:hover {
-  color: var(--nimo-paper);
+  color: var(--nimo-ink);
 }
 
 .mldm_primary_dot,
@@ -182,21 +182,21 @@ body {
 }
 
 .mldm_sublink {
-  color: #b0b6ac;
+  color: #4f5f53;
 }
 
 .mldm_explore,
 .mldm_sub_explore {
-  color: var(--nimo-lime);
-  text-decoration-color: rgb(209 243 106 / 45%);
+  color: var(--nimo-ink);
+  text-decoration-color: var(--nimo-lime);
 }
 
 .mldm_footer_link {
-  color: #a1a99e;
+  color: #5b6b5f;
 }
 
 .mldm_card {
-  color: var(--nimo-paper);
+  color: var(--nimo-ink);
 }
 
 .mldm_card_label {
@@ -204,13 +204,13 @@ body {
 }
 
 .mldm_back {
-  color: var(--nimo-paper);
+  color: var(--nimo-ink);
 }
 
 .mldm_explore:hover,
 .mldm_sub_explore:hover,
 .mldm_footer_link:hover {
-  color: var(--nimo-lime);
+  color: var(--nimo-ink);
 }
 
 .mldm_primary:focus-visible,
@@ -219,7 +219,7 @@ body {
 .mldm_explore:focus-visible,
 .mldm_sub_explore:focus-visible,
 .mldm_footer_link:focus-visible {
-  outline: 2px solid var(--nimo-lime);
+  outline: 2px solid var(--nimo-ink);
   outline-offset: 5px;
 }
 
@@ -232,8 +232,8 @@ body {
   z-index: 2;
   scroll-margin-top: 5.5rem;
   padding: clamp(4.5rem, 8vw, 7.5rem) 5vw 6rem;
-  background: #101010;
-  color: var(--nimo-paper);
+  background: var(--nimo-paper);
+  color: var(--nimo-ink);
 }
 
 .work_section_inner {
@@ -251,7 +251,7 @@ body {
 
 .work_section_kicker {
   margin: 0 0 0.6rem;
-  color: var(--nimo-lime);
+  color: var(--nimo-ink);
   font-size: 0.7rem;
   font-weight: 600;
   letter-spacing: 0.12em;
@@ -259,7 +259,7 @@ body {
 
 .work_section_intro h2 {
   margin: 0;
-  font-family: "Instrument Serif", Georgia, serif;
+  font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 56px;
   font-weight: 400;
   line-height: 0.98;
@@ -268,7 +268,7 @@ body {
 .work_section_intro > p {
   max-width: 38ch;
   margin: 0.7rem 0 0;
-  color: #a6aaa3;
+  color: #5b6b5f;
   font-size: 0.95rem;
   line-height: 1.55;
 }
@@ -281,15 +281,15 @@ body {
 }
 
 .cutout_card {
-  --cutout-surface: #181a18;
+  --cutout-surface: #ffffff;
   display: flex;
   min-width: 0;
   flex-direction: column;
   overflow: hidden;
-  border: 1px solid rgb(244 243 236 / 10%);
+  border: 1px solid rgb(29 48 36 / 12%);
   border-radius: 22px;
   background: var(--cutout-surface);
-  box-shadow: 0 16px 36px rgb(0 0 0 / 20%);
+  box-shadow: 0 16px 36px rgb(29 48 36 / 8%);
   animation: work-card-enter 600ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
 }
 
@@ -309,7 +309,7 @@ body {
   position: relative;
   height: clamp(180px, 19vw, 260px);
   overflow: hidden;
-  background: #252a25;
+  background: var(--nimo-sage);
   isolation: isolate;
 }
 
@@ -352,7 +352,7 @@ body {
   top: 0;
   right: 0;
   border-bottom-left-radius: 16px;
-  background: var(--nimo-paper);
+  background: var(--nimo-lime);
   color: var(--nimo-ink);
 }
 
@@ -371,14 +371,14 @@ body {
   top: 0;
   left: -18px;
   border-top-right-radius: 18px;
-  box-shadow: 5px -5px 0 5px var(--nimo-paper);
+  box-shadow: 5px -5px 0 5px var(--nimo-lime);
 }
 
 .cutout_card_pin::after {
   right: 0;
   bottom: -18px;
   border-top-right-radius: 18px;
-  box-shadow: 5px -5px 0 5px var(--nimo-paper);
+  box-shadow: 5px -5px 0 5px var(--nimo-lime);
 }
 
 .cutout_card_inset {
@@ -386,7 +386,7 @@ body {
   left: 0;
   border-top-right-radius: 18px;
   background: var(--cutout-surface);
-  color: #b4b9b1;
+  color: #4f5f53;
 }
 
 .cutout_card_inset::before {
@@ -412,7 +412,7 @@ body {
 
 .cutout_card_content h3 {
   margin: 0 0 0.55rem;
-  color: var(--nimo-paper);
+  color: var(--nimo-ink);
   font-size: 1.2rem;
   font-weight: 600;
   line-height: 1.2;
@@ -421,7 +421,7 @@ body {
 .cutout_card_content > p {
   min-height: 4.5rem;
   margin: 0 0 1.15rem;
-  color: #a6aaa3;
+  color: #5b6b5f;
   font-size: 0.84rem;
   line-height: 1.55;
 }
@@ -433,7 +433,7 @@ body {
   gap: 0.5rem;
   margin-top: auto;
   padding: 0.9rem 0 0.75rem;
-  border-top: 1px solid rgb(244 243 236 / 12%);
+  border-top: 1px solid rgb(29 48 36 / 12%);
 }
 
 .cutout_card_author {
@@ -441,7 +441,7 @@ body {
   min-width: 0;
   align-items: center;
   gap: 0.65rem;
-  color: var(--nimo-paper);
+  color: var(--nimo-ink);
   font-size: 0.77rem;
   font-weight: 600;
 }
@@ -461,14 +461,14 @@ body {
 }
 
 .cutout_card_meta {
-  color: #a6aaa3;
+  color: #5b6b5f;
   font-size: 0.67rem;
   text-align: right;
 }
 
 .cutout_card_details {
   margin-top: 0.25rem;
-  border-top: 1px solid rgb(244 243 236 / 8%);
+  border-top: 1px solid rgb(29 48 36 / 10%);
   interpolate-size: allow-keywords;
 }
 
@@ -487,7 +487,7 @@ body {
   min-height: 42px;
   align-items: center;
   justify-content: space-between;
-  color: var(--nimo-lime);
+  color: var(--nimo-ink);
   cursor: pointer;
   font-size: 0.78rem;
   font-weight: 600;
@@ -517,7 +517,7 @@ body {
 
 .cutout_card_details_clip p {
   margin: 0 0 0.25rem;
-  color: #a6aaa3;
+  color: #5b6b5f;
   font-size: 0.78rem;
   line-height: 1.55;
 }
@@ -673,3 +673,10 @@ body {
     font-size: 44px;
   }
 }
+.mldm_logo { line-height: 0; text-shadow: none; mix-blend-mode: difference; z-index: 100; top: calc(2.15rem + 0.75rem - 20px) !important; }
+.mldm_logo_img { display: block; height: 40px; width: auto; filter: invert(1); }
+@media (max-width: 767px) {
+  .mldm_logo { top: calc(1.4rem + 0.75rem - 16px) !important; }
+  .mldm_logo_img { height: 32px; }
+}
+.mldm_toggle { mix-blend-mode: difference; filter: none !important; text-shadow: none !important; z-index: 100; color: #fff !important; }

@@ -16,7 +16,7 @@
 }
 
 .cs_preview .cs_wrap {
-  --cs-sans: "DM Sans", sans-serif;
+  --cs-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .cs_wrap {
@@ -30,7 +30,7 @@
   --cs-circle:  rgba(255, 255, 255, 0.1);
   --cs-circle-hover: rgba(255, 255, 255, 0.22);
   --cs-margin:  40px;
-  --cs-sans:    'Switzer', -apple-system, BlinkMacSystemFont, sans-serif;
+  --cs-sans:    "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .cs_wrap {
